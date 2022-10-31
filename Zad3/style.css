@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    
+  }
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: fit-content;
+}
+
+img {
+  border-radius: 10px 10px 0 0;
+  }
+
+div.gallery {
+    margin: 5px;
+    border: 0px solid #ccc;
+    float: left;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px 10px 10px 10px;
+    max-width: 17.5%;
+    min-width: 270px;
+    height:fit-content;
+  }
+  
+
+.card__category{
+    color: rgba(0, 0, 0, 0.892);
+    font-size: 0.6cm;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin: 10px;
+    padding:10px 0;
+    display: flex;
+}
+
+.card__desc{
+    color: rgba(236, 79, 79, 0.892);
+    font-size: 0.4cm;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin: 10px;
+    padding:10px 0;
+    display: flex;
+}
+
+.card__description{
+    color: rgba(0, 0, 0, 0.753);
+    font-size: 0.3cm;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin: 10px;
+    padding:10px 0;
+    display: flex;
+    
+}
+  
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+.other{
+  display:flex;
+  align-items: center;
+}
+
+.read{
+    width: 70%;
+}
+
+.likes{
+    width: 50%;
+    font-size: 12px;
+}
+
+.read input[type=submit]{
+    display: inline-block;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 12px;
+    width: 50%;
+    height: 80%;
+    padding: 10px 0;
+    margin: 20px 20px;
+    background-color: rgba(236, 79, 79, 0.892);
+    color:white;
+    border: none;
+    border-radius: 2px;
+}
+
+
+
+  
+
+  
