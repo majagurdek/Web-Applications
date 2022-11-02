@@ -1,9 +1,8 @@
 
 body{
   background-color: rgb(246, 235, 235);
-  min-width: 1000px;
-  margin: 0;
-  padding: 0;
+  margin: 20px;
+  padding: 30px;
 }
 
 header{
@@ -46,6 +45,8 @@ img{
 .images{
   width: 45%;
   float: right;
+  margin-bottom: 30px;
+  
 }
 
 #id1{
@@ -62,7 +63,7 @@ img{
 
 #id3{
   position: absolute;
-  margin-top: 300px;
+  margin-top: 250px;
   margin-left: 80px;
 }
 
@@ -84,5 +85,21 @@ img:hover{
   .images{
       float: left;
       margin-left: 250px;
+      margin-bottom: 100px;
   }
 }
+
+@media only screen and (max-width: 900px) {
+      
+  section{
+    float: none;
+    width: 90%;
+    height: 300px;
+  }
+  .images{
+      float: left;
+      margin-left: 100px;
+      margin-bottom: 100px;
+  }
+}
+
