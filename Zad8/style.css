@@ -1,0 +1,235 @@
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 600px;
+    perspective: 1000px;
+    
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: white;
+    color: rgb(10, 9, 9);
+    
+  }
+  
+  .flip-card-back {
+    background-color: rgb(126, 22, 237);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .book input[type=submit]{
+    display: inline-block;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 20px;
+    width: 200px;
+    height: 80px;
+    padding: 10px 0;
+    margin: 100px 80px;
+    background-color: white;
+    color:rgb(126, 22, 237);
+    border: none;
+    border-radius: 40px;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0 100%);
+    opacity: 50%;
+    
+  }
+
+.picture{
+  background-color: rgb(125, 43, 125);
+  
+  width: 400px;
+  height: 300px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0 100%);
+
+}
+
+.text1 {
+    position: absolute;
+    bottom: 340px;
+    right:1px;
+    color: white;
+    background-color:rgb(126, 22, 237,0.7) ;
+    font-size: 0.72cm;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    padding:7px 13px;
+}
+
+.text2{
+    position: absolute;
+    bottom: 293px;
+    right: 16px;
+    color: white;
+    background-color:rgb(126, 22, 237, 0.7) ;
+    font-size: 0.72cm;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    padding:8px 13px;
+}
+
+p{
+    text-decoration: underline;
+    text-decoration-color: grey;
+    text-decoration-thickness: 1px;
+    line-height: 3;
+    font-size: 0.49cm;
+    color: rgb(47, 46, 46);
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0 ;
+    margin-bottom: 0 ;
+}
+
+h1{
+    line-height: 7;
+    font-size: 0.7cm;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    margin-top: 0 ;
+    margin-bottom: 0 ;
+}
+
+h2{
+    line-height: 1;
+    font-size: 2.3cm;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    margin-top: 0 ;
+    margin-bottom: 0 ;
+}
+
+body{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.text3 {
+  position: absolute;
+  bottom: 340px;
+  right:1px;
+  color: white;
+  background-color:rgb(242, 128, 14, 0.7) ;
+  font-size: 0.72cm;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 10px;
+  padding:7px 13px;
+}
+
+.text4{
+  position: absolute;
+  bottom: 293px;
+  right: 16px;
+  color: white;
+  background-color:rgb(242, 128, 14, 0.7) ;
+  font-size: 0.72cm;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 10px;
+  padding:8px 13px;
+}
+
+.picture-2{
+  background-color: rgb(242, 128, 14);
+  
+  width: 400px;
+  height: 300px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0 100%);
+
+}
+
+.flip-card-2 {
+  background-color: transparent;
+  width: 400px;
+  height: 600px;
+  perspective: 1000px;
+  
+}
+
+.flip-card-inner-2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+.flip-card-2:hover .flip-card-inner-2 {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front-2, .flip-card-back-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front-2 {
+  background-color: white;
+  color: rgb(10, 9, 9);
+  
+}
+
+.flip-card-back-2 {
+  background-color: rgb(242, 128, 14);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.book-2 input[type=submit]{
+  display: inline-block;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 20px;
+  width: 200px;
+  height: 80px;
+  padding: 10px 0;
+  margin: 100px 80px;
+  background-color: white;
+  color:rgb(242, 128, 14);
+  border: none;
+  border-radius: 40px;
+}
+
+.druga{
+  margin: 20px;
+}
+
+.pierwsza{
+  margin: 20px;
+}
