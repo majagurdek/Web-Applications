@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: monospace;
+    background-color: rgb(175, 211, 210);
+  }
+  
+a {
+    color: white;
+  }
+
+.header {
+    background-color: rgb(46, 60, 61);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: rgb(46, 60, 61);
+  }
+  
+.header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid rgb(46, 60, 61);
+    text-decoration: none;
+  }
+  
+.header li a:hover,.header .menu-btn:hover {
+    background-color: rgb(114, 129, 132);
+  }
+  
+.header .logo {
+    display: block;
+    float: left;
+    font-family: monospace;
+    font-size: 0.8cm;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+  }
+
+  
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .4s ease-out;
+  }
+  
+.header .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+.header .menu-icon .nav-icon {
+    background: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .4s ease-out;
+    width: 18px;
+  }
+  
+.header .menu-icon .nav-icon:before,.header .menu-icon .nav-icon:after {
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+.header .menu-icon .nav-icon:before {
+    top: 5px;
+  }
+  
+.header .menu-icon .nav-icon:after {
+    top: -5px;
+  }
+  
+
+.header .menu-btn {
+    display: none;
+  }
+  
+.header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+  }
+  
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top:0;
+  }
+  
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top:0;
+  }
+  
+  
+@media (min-width: 800px) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }

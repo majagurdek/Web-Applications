@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zad10 - Ecommerce</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="visual bg-grad-blue">
+            <img class="nike" src="imgs/nike.png" alt="logo">
+            <img class="share" src="imgs/share-blue.png" alt="share">
+            <img class="sneakers blue-filter" src="imgs/blue.png" alt="sneakers">
+            <h1>NIKE</h1>
+        </div>
+        <div class="textual">
+            <div class="title">
+                <h1>Nike Zoom KD 12</h1><span class="new bg-blue">NEW</span>
+            </div>
+            <div class="subtitle border-bottom">
+                <h4>Men's Running Shoes</h4>
+            </div>
+            <div class="product border-bottom">
+                <h3>PRODUCT INFO</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A, soluta, optio veniam beatae corrupti recusandae eveniet minima necessitatibus ullam, voluptatum voluptatem! Vel cumque voluptas accusamus voluptates eligendi incidunt praesentium iste!
+                </p>
+            </div>
+            <div class="color border-bottom">
+                <h3>Color</h3>
+                <div class="colors">
+                    <div class="blue"></div>
+                    <div class="red"></div>
+                    <div class="green"></div>
+                    <div class="orange"></div>
+                    <div class="dark"></div>
+                </div>
+            </div>
+            <div class="size border-bottom">
+                <h3>Size</h3>
+                <div class="sizes">
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>10</div>
+                    <div>11</div>
+                </div>
+            </div>
+            <div class="action">
+                <button class="bg-blue">
+                    <span></span>
+                    ADD TO CART
+                </button>
+                <h1>
+                    <span>$</span>
+                    189.99
+                </h1>
+            </div>
+        </div>
+    </div>
+    <script>
+
+const colors = document.querySelector(".colors").children
+
+Array.prototype.forEach.call(colors, color => {
+    color.addEventListener("click", (e) => {
+        const c = e.target.classList[0];
+
+        const visual = document.querySelector(".visual")
+        const sneakers = document.querySelector(".sneakers")
+        const newSpan = document.querySelector(".new")
+        const button = document.querySelector("button")
+        const share = document.querySelector(".share")
+
+        // remove last color classes
+        visual.classList.remove(visual.classList[visual.classList.length - 1])
+        sneakers.classList.remove(sneakers.classList[sneakers.classList.length - 1])
+        newSpan.classList.remove(newSpan.classList[newSpan.classList.length - 1])
+        button.classList.remove(button.classList[button.classList.length - 1])
+
+        // add new color class
+        visual.classList.add(`bg-grad-${c}`)
+        sneakers.classList.add(`${c}-filter`)
+        newSpan.classList.add(`bg-${c}`)
+        button.classList.add(`bg-${c}`)
+        share.src = `imgs/share-${c}.png`;
+
+    })
+});
+
+
+    </script>
+</body>
+</html>
