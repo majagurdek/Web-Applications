@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Zadanie 4</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/action_page.php">
+          
+            <label for="password">New password</label>
+            <input type="password" id="password" >
+            
+            <input type="checkbox" id="check1" onclick="myFunction1()">[show password]<br><br><br>
+          
+        
+            <label for="conf"> Repeat new password</label>
+            <input type="password" id="conf" >
+            
+            <input type="checkbox" id="check1" onclick="myFunction2()">[show password]
+        
+
+        </form>
+    </div>
+      
+    <div id="message">
+        <h3>Password requirements:</h3>
+        <p id="letter" class="invalid">At least one special character</p>
+        <p id="capital" class="invalid">At least one capital letter</p>
+        <p id="number" class="invalid">At least one digit</p>
+        <p id="length" class="invalid">At least 8 characters</p>
+    </div>
+</body>
+</html>

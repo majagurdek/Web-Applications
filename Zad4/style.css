@@ -1,0 +1,54 @@
+input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #edf1f1;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 3px;
+  }
+
+  label{
+    font-size: 20px;
+    font-weight:bold;
+  }
+  
+  
+  .container {
+    background-color: #edf1f1;
+    padding: 20px;
+    font-family: sans-serif;
+  }
+
+  h3{
+    margin: 30px;
+    font-size: 25px;
+  }
+  
+  .valid {
+    color: rgb(57, 157, 57);
+    margin: 20px;
+    font-size: 20px;
+  }
+  
+  .valid:before {
+    position: relative;
+    margin: 20px;
+    font-size: 20px;
+    content: "✔";
+    margin-left: 10px;
+  }
+  
+  .invalid {
+    color: rgb(196, 24, 24);
+    margin: 20px;
+    font-size: 20px;
+  }
+  
+  .invalid:before {
+    position: relative;
+    margin: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+    content: "✖";
+  }

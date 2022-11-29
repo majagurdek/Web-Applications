@@ -1,0 +1,28 @@
+*{
+    background-color: rgb(239, 233, 233);
+}
+
+h1{
+    color: rgb(91, 159, 107);
+    margin: 20px;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+#book-form{
+    margin: 20px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+#add{
+    margin: 10px;
+    margin-left: 0;
+    
+}
+
+#book-list{
+    margin: 20px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
