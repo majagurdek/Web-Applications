@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>Zadanie 4</title>
 </head>
 <body>
@@ -13,17 +14,12 @@
         <form action="/action_page.php">
           
             <label for="password">New password</label>
-            <input type="password" id="password" >
+            <input type="password" name="password" autocomplete="current-password" required="" id="password">
+            <i class="far fa-eye" id="togglePassword" style="margin-left: -40px; cursor: pointer;" ></i>
             
-            <input type="checkbox" id="check1" onclick="myFunction1()">[show password]<br><br><br>
-          
-        
             <label for="conf"> Repeat new password</label>
-            <input type="password" id="conf" >
-            
-            <input type="checkbox" id="check1" onclick="myFunction2()">[show password]
-        
-
+            <input type="password" name="conf" autocomplete="current-password" required="" id="conf" >
+            <i class="far fa-eye" id="toggleConf" style="margin-left: -40px; cursor: pointer;" ></i>
         </form>
     </div>
       

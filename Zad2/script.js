@@ -6,9 +6,7 @@ class Book {
   }
   
   class UI {
-    
-  
-    static addBookToList(book) {
+      static addBookToList(book) {
       const list = document.querySelector('#book-list');
       const row = document.createElement('tr');
   
@@ -18,12 +16,11 @@ class Book {
         \xa0\xa0\xa0\xa0\xa0
         <td>${book.tel}</td>
         \xa0\xa0\xa0\xa0\xa0
-        
 
         <td><a href="#" class="btn btn-danger btn-sm delete">✖</a></td>
         
       `;
-  
+      
       list.appendChild(row);
     }
   
@@ -40,21 +37,17 @@ class Book {
     }
   }
 
-  
-  // Display
   document.addEventListener('DOMContentLoaded', UI.displayBooks);
   
-  // Add 
   document.querySelector('#book-form').addEventListener('submit', (e) => {
     e.preventDefault();
   
-    // Get form values
     const name = document.querySelector('#name').value;
     const tel = document.querySelector('#tel').value;
     var regName = /^[a-zA-Z]+\s*([a-zA-Z]+)?[-]?\s*([a-zA-Z]+)?$/;
     var regTel = /^(([+]\d{2}))?\s*\d{3}\-?\s*\d{3}\-?\s*\d{3}$/;
   
-    // Validation
+    
     if(name === '' || tel === '') {
       alert("Uzupełnij wszystkie pola");
       return;
@@ -75,8 +68,16 @@ class Book {
     }
     
     else {
+
+      const arr = name.split(/-| /);
+      for (var i = 0; i < arr.length; i++) {
+        arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+      }
+      
+      const name2 = arr.join(" ");
+
       const tel2 = (tel.replace(/ /g, '')).replace(/\-/g, '');
-      const book = new Book(name, tel2);
+      const book = new Book(name2, tel2);
       UI.addBookToList(book);
       UI.clearFields();
     }

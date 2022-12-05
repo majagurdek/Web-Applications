@@ -11,81 +11,59 @@
 <body>
     <h1>Poznaj naszych pracowników</h1>
 
-    <div class="slideshow-container">
-
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-            <img src="img1.jpg"  >
-            <div class="container">
-              <h2><b>Maryla Rodowicz</b></h2> 
-              <h4>Product Owner</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p> 
-            </div>
-        </div>
-      
-        <div class="mySlides fade">
-            <img src="img2.jpg" >
-            <div class="container">
-                <h2><b>Michał Wiśniewski</b></h2> 
-                <h4>UX Designer</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p> 
-              </div>
-        </div>
-      
-        <div class="mySlides fade">
-            <img src="img3.jpg"  >
-            <div class="container">
+    <div class="slider">
+      <div class="slide">
+        <img src="img1.jpg"  >
+        <h2><b>Maryla Rodowicz</b></h2> 
+        <h4>Product Owner</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p> 
+      </div>
+      <div class="slide">
+        <img src="img2.jpg" >
+        
+            <h2><b>Michał Wiśniewski</b></h2> 
+            <h4>UX Designer</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p> 
+      </div>
+      <div class="slide">
+        <img src="img3.jpg"  >
+            
                 <h2><b>Beata Kozidrak</b></h2> 
                 <h4>Programista Blockchain</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p> 
-              </div>
-        </div>
-
-        <div class="mySlides fade">
-            <img src="img4.jpg"  >
-            <div class="container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      </div>
+      <div class="slide">
+        <img src="img4.jpg"  >
+            
                 <h2><b>Zenon Martyniuk</b></h2> 
                 <h4>Analityk Big Data</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-            </div>
-        </div>
-
-        <div class="mySlides fade">
-            <img src="img5.jpg"  >
-            <div class="container">
+      </div>
+      <div class="slide">
+        <img src="img5.jpg"  >
+            
                 <h2><b>Justyna Steczkowska</b></h2> 
                 <h4>VR Developer</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-            </div>
-        </div>
+      </div>
 
-        <div class="mySlides fade">
-            <img src="img6.jpg" >
-            <div class="container">
+      <div class="slide">
+        <img src="img6.jpg" >
+            
                 <h2><b>Krzysztow Krawczyk</b></h2> 
                 <h4> Specjalista od cyberbezpieczeństwa</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-            </div>
-        </div>
-      
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br>
-      
-      <!-- The dots/circles -->
-      <div class="dots">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-      </div>
       </div>
 
-      <button id="btn" class="button">Wybierz losowo</button>
+      <button class="btn btn-next">&#10095;</button>
+      <button class="btn btn-prev">&#10094;</button>
+      <button id="btn" class="btn btn-random">Wybierz losowo</button>
+      
+    </div>
+    
+
+
+      
     
 </body>
 </html>

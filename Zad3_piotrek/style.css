@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(188, 235, 188);
+}
+
+.content {
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 20px;
+    display: none;
+    text-align: center;
+}
+
+.collapsible {
+    background-color: rgb(113, 147, 95);
+    color: white;
+    height: 70px;
+    width: 100%;
+    border: 2px;
+    margin: 4px;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+  }
+  
+.active, .collapsible:hover {
+    background-color: rgb(142, 159, 148);
+}

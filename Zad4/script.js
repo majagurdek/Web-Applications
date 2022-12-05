@@ -5,10 +5,6 @@ var capital = document.getElementById("capital");
 var number = document.getElementById("number");
 var length = document.getElementById("length");
 
-
-
-
-
 document.getElementById("message").style.display = "block";
 myInput.onkeyup = function() {
   // Validate specials
@@ -48,30 +44,11 @@ myInput.onkeyup = function() {
 }
 
 
-function myFunction1() {
-    var x = document.getElementById("password");
-    if (x.type === "password") {
-      x.type = "text";
-    } else {
-      x.type = "password";
-    }
-  }
-
-  function myFunction2() {
-   var x = document.getElementById("conf");
-    if (x.type === "password") {
-      x.type = "text";
-    } else {
-      x.type = "password";
-    }
-  }
-
 var input = document.getElementById("conf");
 input.addEventListener("keydown", function (e) {
    if (e.key === "Enter") {  
      validate(e);}
 });
-
 
 
 function validate(e) {
@@ -83,5 +60,22 @@ function validate(e) {
     }
     return true;
 }
+
+const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#password');
+  togglePassword.addEventListener('click', function (e) {
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    this.classList.toggle('fa-eye-slash');
+});
+
+
+const toggleConf = document.querySelector('#toggleConf');
+  const confirm = document.querySelector('#conf');
+  toggleConf.addEventListener('click', function (e) {
+    const type = conf.getAttribute('type') === 'password' ? 'text' : 'password';
+    conf.setAttribute('type', type);
+    this.classList.toggle('fa-eye-slash');
+});
 
 
